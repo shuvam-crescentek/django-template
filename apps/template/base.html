@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="{% static 'favicon.png'  %}" type="image/x-icon">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'asset/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+<div class="container">
+    {% block content %}{% endblock %}
+
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="{% static 'asset/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>
